@@ -1,0 +1,26 @@
+@media only screen and (min-width:300px){
+
+    .social_media{
+        margin-bottom: 1em;
+        
+        &__icon{
+            fill: $blue;
+            width: 2em;
+            height: 2em;
+            border: 1px solid $light_blue;
+            border-radius: 100%;
+            padding: .4em;
+            margin: 0 .5em 0 .5em;
+            overflow: visible;
+            transition: 100ms ease;
+
+            cursor: pointer;
+            &--hover{
+                &:hover{
+                    background-color: $blue;
+                    fill: white;
+                }
+            }
+        }
+    }
+}
