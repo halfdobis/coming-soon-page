@@ -1,0 +1,42 @@
+//needed to add another animation for text and hook it to the button since before and after pseudos don't work on input fields
+@media only screen and (min-width:300px){
+    .email_wrong{
+        margin-bottom: 3em;
+        border: 1px solid red;
+    }
+
+    .email_wrong_text{
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "Please provide a valid email address";
+            font-style: italic;
+            color: red;
+            width: 20em;
+            bottom: 4.5em;
+            left: 0;
+        }
+    }
+}
+
+@media only screen and(min-width:1024px){
+
+    .email_wrong{
+        position: relative;
+        margin-bottom: 0;
+    }
+    
+    .email_wrong_text{
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "Please provide a valid email address";
+            font-style: italic;
+            color: red;
+            width: 20em;
+            bottom: -1.5em;
+            left: -28em;
+        }
+    }
+    
+}
